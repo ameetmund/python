@@ -47,3 +47,11 @@ for index, num in enumerate(list6):
         print(f"The first index for 10 is {index}")
         break
 
+# Use of zip
+# This will concatenate two lists and result will be a list of tuples
+list7 = ('python', 'javascript')
+list8 = ('.py', '.js')
+
+zipped_list = list(zip(list7, list8))
+print(zipped_list)
+
