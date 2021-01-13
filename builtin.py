@@ -40,6 +40,6 @@ print(lower)   # This will get the lower case values
 upper = string.ascii_uppercase
 print(upper)    # This will get the upper case value
 
-print(capwords(message))    # This will make all the first letters as capital
+print(capwords(message))    # This will make all the first letters as capital.
 
 
