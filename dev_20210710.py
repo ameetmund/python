@@ -9,12 +9,18 @@ char_list = ['a', 'f', 'z', 'h', 'd', 'b', 'c', 'y']
 print(sorted(char_list))
 print(char_list)
 
+char_list_2 = char_list.copy()
+char_list_2.remove('y')
+print(char_list)
+print(char_list_2)
+
 char_list.sort()
 print(char_list)
 
 # join also helps in adding a specific object to each indices of the list
 greet_list = " ".join(['hello', 'my', 'name', 'is', 'Mark'])
 print(greet_list)
+
 
 # range is used widely with list
 print(list(range(5, 15)))
@@ -41,6 +47,44 @@ my_dictionary = {
 
 print(my_dictionary['first_name'], my_dictionary['last_name'], my_dictionary['country'])
 
+print(my_dictionary.get("country"))
+print(my_dictionary.get("city"))    # It will provide None as nothing is present as
+                                    # a "city" key.
 
+my_dictionary.pop('country')        # It will remove country from the dictionary
+print(my_dictionary)
+
+print(my_dictionary.keys())
+print(my_dictionary.values())
+
+print(my_dictionary.update({"city":"New York"}))
+print(my_dictionary)
+
+new_game = {
+    'age': 21,
+    'username': 'jack_matt',
+    'weapons': ['bullets', 'guns', 'rifles'],
+    'is_active': True,
+    'clan': False
+}
+
+print(new_game.keys())
+new_game['weapons'].append('shield')
+print(new_game)
+
+new_game.update({'is_banned':False})
+print(new_game)
+
+new_game.update({'is_banned':True})
+print(new_game)
+
+# It is important to note that.copy method ensures that the new object is just a
+# copy of the original one and the original doesn't get the changed value from the
+# copied dictionary. This rule is applicable for list as well.
+
+new_game_2 = new_game.copy()
+new_game_2.update({'age':25, 'username':'johny_john'})
+print(new_game)
+print(new_game_2)
 
 
