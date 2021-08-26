@@ -1,4 +1,4 @@
-# Web scrapping
+# Web scrapping.
 
 import requests
 from bs4 import BeautifulSoup
