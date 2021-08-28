@@ -15,6 +15,6 @@ with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:
   smtp.ehlo()
   smtp.starttls()
   smtp.ehlo()
-  smtp.login('ameetmund@gmail.com', 'System#001')
+  smtp.login('email id', 'password')
   smtp.send_message(email)
   print('all good boss!')
