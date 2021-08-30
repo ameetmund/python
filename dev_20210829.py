@@ -52,9 +52,9 @@ def stuart_score(consonant_set):
         return stuart_points
 
 def kevin_count(kevin_final_list):
-    print("WORDS" + "       " + "SCORE")
+    print("WORDS" + "\t" + "SCORE")
     for item in kevin_final_list:
-        print(item + "       " + str(word.count(item)))
+        print(item + "\t\t" + str(word.count(item)))
 
 if __name__ == '__main__':
     kevin_final_list = kevin_score(vowel_set)
