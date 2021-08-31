@@ -49,17 +49,23 @@ def stuart_score(consonant_set):
             else:
                 new_word = stuart_points[j-1] + letter
                 stuart_points.append(new_word)
-        return stuart_points
+    return stuart_points
 
 def kevin_count(kevin_final_list):
     print("WORDS" + "\t" + "SCORE")
     for item in kevin_final_list:
         print(item + "\t" + str(word.count(item)))
 
+def stuart_count(stuart_final_list):
+    print("WORDS" + "\t" + "SCORE")
+    for item in stuart_final_list:
+        print(item + "\t" + str(word.count(item)))
+
 if __name__ == '__main__':
     kevin_final_list = kevin_score(vowel_set)
     stuart_final_list = stuart_score(consonant_set)
     kevin_count(kevin_final_list)
+    stuart_count(stuart_final_list)
 
 
 
