@@ -79,7 +79,7 @@ class DoublyLinkedList:
         temp = None
         current = self.head
 
-        # Swap next and prev for all nodes of
+        # Swap next and prev for all nodes of.
         # doubly linked list
         while current is not None:
             temp = current.prev
