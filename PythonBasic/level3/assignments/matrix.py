@@ -11,6 +11,11 @@ def main():
             val = int(input(f"Enter the number of your choice for row {rows} & col {cols}: "))
             inner_list.append(val) 
         matrix.append(inner_list)
+
+    for i in range(num_rows):
+        for j in range(num_cols):
+            print(matrix[i][j], end=" ")
+        print()
     print(matrix)
 
 if __name__ == '__main__':
