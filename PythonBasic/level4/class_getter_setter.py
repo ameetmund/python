@@ -18,6 +18,7 @@ class Laptop:
     # change the value of
     def get_geo(self):
         self.__laptop_geo = "India"
+        print("Geo location is set in main class")
         return self.__laptop_geo
 
     # Setter 
@@ -40,7 +41,7 @@ laptop = Laptop()
 
 print(laptop.get_geo())
 laptop.set_geo("Europe")
-print(laptop.___laptop_geo)
+# print(laptop.___laptop_geo)
 
 
 
